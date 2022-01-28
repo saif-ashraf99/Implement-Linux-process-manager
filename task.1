@@ -1,0 +1,11 @@
+List all the processes in the system :
+In order to list all running processes in the system, use the ps command with the command line option -e. There are different variations of the command which lists all processes, mostly to control the formatting of the output. We use the -F option below to display the extra full format. You can use -ef or -ely as well.
+List all the processes grouped by user:
+Aside from those two options, here are some other common examples of the ps command that list running processes in Linux: ps -u
+Display process ID of all the processes :
+To display all processes that are run by the root user, pass root with the -U and -u flag. ps -U root -u root Get a Process PID To get the Process ID of a particular process, use the -C flag with the command.
+Run/stop a specific process:
+To run process command:kill -CONT PID , To stop process command :kill -STOP PID
+Send specific signals to specific process:
+Apart from the keyboard signals like <ctrl>+ and <ctrl>-c, the kill command can be used to send specific signals to a process by using the process’s PID. # sends a SIGINT kill -2 <pid> <pid> # sends a SIGKILL kill -9 <pid> #sends a SIGQUIT
+
